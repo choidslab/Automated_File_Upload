@@ -1,7 +1,7 @@
 """
 Created date: 2018-01-15-Mon
-Modified date: 2018-03-05-Mon
-Made by Doo Seop Choi
+Modified date: 2018-05-08-Tue
+Made by DS.Choi
 
 본 프로그램은 특정 디렉토리를 모니터링 하면서 파일 생성 이벤트가 발생할 경우, 해당 파일을 FTP 서버에 자동 업로드 하는 프로그램입니다.
 
@@ -103,7 +103,7 @@ def ftp_upload(filename, dirname, eventpath):
     # Close file open().
     file.close()
 
-def CheckAccount():
+def check_account():
     try:
         ftp = FTP("snji.org")
         ftp.login(username, password)
@@ -123,7 +123,7 @@ if __name__ == '__main__':
         username = input("ID: ")
         password = getpass.getpass(prompt="Password: ")
 
-        if CheckAccount():
+        if check_account():
             print("Verified!\n")
             break
         else:
