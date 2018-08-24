@@ -66,7 +66,7 @@ class Handler(FileSystemEventHandler):
             # Extract file extension
             ext = os.path.splitext(event.src_path)[-1]
 
-            # If file extension is .mp4, perform file upload.
+            # If file extension is '.mp4', upload a file.
             if ext == '.mp4':
                 filename = event.src_path.split('/')[-1]
                 dirname = event.src_path.split('/')[-2]
@@ -74,7 +74,6 @@ class Handler(FileSystemEventHandler):
                 t.start()
             else:
                 pass
-
         else:
             return None
 
