@@ -1,8 +1,8 @@
 import sys
 from cx_Freeze import setup, Executable
 
-setup(  name = "Autoupload",
-        version = "1.0",
+setup(  name = "Autouploader",
+        version = "1.1",
         description = "Auotoupload",
-        author = "dschoi",
-        executables = [Executable("./AutoUpload.py")])
+        author = "Dooseop Choi",
+        executables = [Executable("./AutoUpload_multi.py")])
