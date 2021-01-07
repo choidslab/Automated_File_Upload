@@ -152,3 +152,4 @@ pip-selfcheck.json
 .idea
 build/
 AutoUpload_multi.py
+.idea/workspace.xml
