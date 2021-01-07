@@ -1,5 +1,0 @@
-#!/Users/dooseop/PycharmProjects/AutoUpload/venv/bin/python
-from cx_Freeze.setupwriter import main
-
-main()
-
